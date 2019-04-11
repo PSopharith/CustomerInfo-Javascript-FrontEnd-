@@ -1,0 +1,84 @@
+<!Doctype html>
+<html>
+<head>
+    <title> Customer Info</title>
+    <style type= "text/css">
+        @import url(css/style.css);
+    </style>
+<script type="text/javascript" src="js/script.js">
+
+</script>
+</head>
+<body style="background-color:floralwhite; " onload="onLoad()">
+    <form id="CustForm">
+        <table style="width: 30%; height: auto; border: 3px solid #CAE2FF; border-radius: 2%; box-shadow: 10px 10px 10px #CAE2FF; background-color:white; margin: 2% auto;">
+            <tr style="width:100%; height:auto;  text-align: center;"><td colspan="2"><h2>Customer Information!</h2></td></tr>
+            <tr style="width:100%; height:auto;">
+                <td class="lblCol1"><h3>ID:</h3></td>
+                <td style="width:50%; height:auto; text-align: center;"><input type="text" id="txtCusID" style="width:80%; height:auto;"/></td>
+            </tr>
+            <tr style="width:100%; height:auto;">
+                <td class="lblCol1"><h3>Name:</h3></td>
+                <td class="lblCol2"><input type="text" id="txtCusName" style="width:80%; height:auto;"/></td>
+            </tr>
+            <tr style="width:100%; height:auto;">
+                <td class="lblCol1"><h3>Sex:</h3></td>
+                <td class="lblCol2">
+                    <input type="radio" id="rdoMale" name="rdoSex" value="Male" checked/>Male
+                    <input type="radio" id="rdoFemale" name="rdoSex" style="margin-left:30%;" value="Female"/>Female
+                </td>
+            </tr>
+            <tr style="width:100%; height:auto;">
+                <td class="lblCol1"><h3>Address 1:</h3></td>
+                <td class="lblCol2"><input type="text" id="txtCusAddr1" style="width:80%; height:auto;"/></td>
+            </tr>
+            <tr style="width:100%; height:auto;">
+                <td class="lblCol1"><h3>Address 2:</h3></td>
+                <td class="lblCol2"><input type="text" id="txtCusAddr2" style="width:80%; height:auto;"/></td>
+            </tr>
+            <tr style="width:100%; height:auto;">
+                <td class="lblCol1"><h3>City:</h3></td>
+                <td class="lblCol2"><input type="text" id="txtCusCity" style="width:80%; height:auto;"/></td>
+            </tr>
+            <tr style="width:100%; height:auto;">
+                <td class="lblCol1"><h3>State:</h3></td>
+                <td class="lblCol2">
+                    <select id="cboCusState" style="width:80%; height:auto;"></select>
+                </td>
+            </tr>
+            <tr style="width:100%; height:auto;">
+                <td class="lblCol1"><h3>Zip Code:</h3></td>
+                <td class="lblCol2"><input type="text" id="txtCusZip" style="width:80%; height:auto;"/></td>
+            </tr>
+            <tr style="width:100%; height:auto;">
+                <td style="width:50%; height:auto; padding-left:10%; text-align: center;" colspan="2">
+                <!--    <input type="Button" id="btnSubmit" value="Submit" style="width:30%; height:auto;" onclick="GetCustomer1()"/> -->
+                    <input type="Button" id="btnSubmit1" value="Submit" style="width:30%; height:auto;" onclick="GetCustomer2()"/> 
+                    <input type="Button" id="btnReset" value="Reset" style="width:30%; height:auto; margin-left: 10%" onclick="fnReset()"/>
+                </td>
+                <td style="width:50%; height:auto; padding:15px;"></td>
+            </tr>
+        </table>
+    </form>
+    <table id="lstCustomer" style="width:100%; height: auto; border:1px solid black; background-color: white;" cellspacing="0">
+        <col style="width:7%; height:auto;"/>
+        <col style="width:15%; height:auto;"/>
+        <col style="width:7%; height:auto;"/>
+        <col style="width:18%; height:auto"/>
+        <col style="width:18%; height:auto"/>
+        <col style="width:15%; height:auto"/>
+        <col style="width:10%; height:auto"/>
+        <col style="width:10%; height:auto"/>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Sex</th>
+            <th>Address 1</th>
+            <th>Address 2</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip Code</th>
+        </tr>
+    </table>
+</body>
+</html>

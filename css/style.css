@@ -1,0 +1,5 @@
+
+#lstCustomer td {border:1px solid black;}
+#lstCustomer th  {border:1px solid black;}
+.lblCol1 {width:50%; height:auto; padding-left: 10%}
+.lblCol2 {width:50%; height:auto;  text-align: center;}
